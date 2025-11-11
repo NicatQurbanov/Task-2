@@ -1,0 +1,23 @@
+@mixin text($m, $fs) {
+    margin: $m;
+    font-size: $fs;
+    text-align: center;
+}
+
+ %flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ %height {
+    height: 100%;
+ }
+
+ @mixin width($m: 0 auto, $w) {
+    margin: $m;
+    width: $w; 
+ }
+
+ $gray: #3d3d3d;
+ $border: 1px solid black;
