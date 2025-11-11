@@ -27,7 +27,6 @@ a {
 
 img {
   width: 100%;
-  height: 540px;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -89,7 +88,7 @@ header nav li:last-child {
   width: 80%;
 }
 .info .five > p {
-  margin: 70px auto 0;
+  margin: 20px auto 0;
   font-size: 1.05rem;
   text-align: center;
   width: 125px;
@@ -103,7 +102,7 @@ header nav li:last-child {
   display: block;
   padding: 13px 0;
   text-align: center;
-  margin: 10px auto 45px;
+  margin: 30px auto 45px;
   width: 125px;
 }
 .info img {
@@ -159,5 +158,19 @@ footer .footer-container li a {
   figure {
     max-width: 500px;
     margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .five p {
+    max-width: 500px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .info {
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-areas: "one one one" "two thr fou" "fiv fiv fiv";
+  }
+  .five p {
+    max-width: unset;
   }
 }/*# sourceMappingURL=main.css.map */
