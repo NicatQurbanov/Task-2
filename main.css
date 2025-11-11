@@ -141,25 +141,23 @@ footer .footer-container li a {
 }
 
 /* RESPONSIVE */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 480px) {
   .info {
-    grid-template-columns: repeat(3, minmax(350px, 1fr));
+    grid-template-columns: 1fr;
+    grid-template-areas: "one" "two" "thr" "fou" "fiv";
   }
-}
-@media only screen and (min-width: 992px) {
-  .info {
-    grid-template-columns: repeat(3, 1fr);
+  .info .five > p {
+    min-width: unset;
+    width: unset;
   }
-}
-@media only screen and (min-width: 768px) {
   footer .footer-container {
     margin: 0 auto;
     width: 100%;
     justify-content: center;
+    gap: 0px;
   }
-}
-@media only screen and (min-width: 320px) {
-  .info {
-    grid-template-columns: repeat(3, 2fr);
+  figure {
+    max-width: 500px;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=main.css.map */

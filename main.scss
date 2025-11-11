@@ -127,35 +127,38 @@ footer {
 
 /* RESPONSIVE */
 
-@media only screen and (min-width: 1200px) {
- 
-  .info {
-    grid-template-columns: repeat(3, minmax(350px, 1fr));
-  }
-}
 
-@media only screen and (min-width: 992px) {
- 
+@media only screen and (min-width: 480px) {
   .info {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "one"
+    "two"
+    "thr"
+    "fou"
+    "fiv";
+     .five {
+      >p {
+        min-width: unset;
+        width: unset;
+      }
+     }
   }
+  footer {
+.footer-container {
+    @include var.width($w: 100%);
+    justify-content: center;
+    gap: 0px;
+}}
+ figure {
+  max-width: 500px;
+  margin: 0 auto;
+ }
 }
 
 @media only screen and (min-width: 768px) {
 
-footer {
-.footer-container {
-    @include var.width($w: 100%);
-    justify-content: center;
-}}
 }
-
-@media only screen and (min-width: 320px) {
-  .info {
-    grid-template-columns: repeat(3, 2fr);
-  }
-}
-
 
 
 
